@@ -27,7 +27,6 @@ void heartbeat()
 
 void setup()
 {
-    //初始化端口
     Serial.begin(115200);
     BLINKER_DEBUG.stream(Serial);
     BLINKER_DEBUG.debugAll();
@@ -39,7 +38,7 @@ void setup()
 
 void loop() 
 {
-    Blinker.run();//运行Blinker
+    Blinker.run();                     //run Blinker
  
     float h = dht.readHumidity();      //read humidity from DHT11
     float t = dht.readTemperature();   //read temperature from DHT11
