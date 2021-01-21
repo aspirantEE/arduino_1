@@ -85,8 +85,8 @@ void loop()
     digitalWrite(buzzer,LOW);//don't ring
   }
 
-  Serial.print("Tempeature:");                        //print 'Tempeature':
-  Serial.print(d);                                     //print tempeature
+  Serial.print("Temperature:");                        //print 'Temperature':
+  Serial.print(d);                                     //print temperature
   Serial.println(" C");
 
   Serial.print("Humidity:");                            //print 'Humidity':
